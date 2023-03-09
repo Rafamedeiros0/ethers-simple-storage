@@ -1,5 +1,7 @@
 async function main() {
   console.log("hi");
+  // compile them in our code
+  // compile them separately
 }
 
 main()
