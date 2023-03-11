@@ -25,7 +25,7 @@ async function main() {
   console.log("Let's deploy with only transaction data!");
   const nonce = await wallet.getTransactionCount();
   const tx = {
-    noncel,
+    nonce,
     gasPrice: 20000000000,
     gasLimit: 1000000,
     to: null,
