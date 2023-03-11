@@ -23,8 +23,9 @@ async function main() {
   // const transactionReceipt = await contract.deployTransaction.wait(1);
 
   console.log("Let's deploy with only transaction data!");
+  const nonce = await wallet.getTransactionCount();
   const tx = {
-    nonce: 5,
+    noncel,
     gasPrice: 20000000000,
     gasLimit: 1000000,
     to: null,
