@@ -6,9 +6,11 @@ async function main() {
   // compile them in our code
   // compile them separately
 
-  const provider = new ethers.provider.JsonRpcProvider("HTTP://127.0.0.1:7545");
+  const provider = new ethers.providers.JsonRpcProvider(
+    "HTTP://127.0.0.1:7545"
+  );
   const wallet = new ethers.Wallet(
-    "0xef1c4e223848be79a36bf204968ba44945a314493f6f88243c9b5b7cab97f08c",
+    "0xdf55e214b4feff7f0b90c3663e32ac74e7a6a50fb9c7bc69d5e3a1b49bdaf371",
     provider
   );
   const abi = fs.readFileSync("./SimpleStorage_sol_SimpleStorage.abi", "utf8");
